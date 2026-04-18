@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    
+    <!-- SEO & Meta -->
+    <title>V E R T I C A | Architectural Living</title>
+    <meta name="description" content="Curated luxury estates for the discerning few. Experience architecture that breathes.">
+    <meta name="keywords" content="luxury real estate, modern architecture, penthouse, investment property, dw33py">
+    <meta property="og:title" content="VERTICA — Living Redefined">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop">
+    <meta property="og:description" content="Where structure meets sanctuary. Award-winning estates.">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Emergency Preloader Removal -->
+    <script>
+        (function() {
+            setTimeout(function() {
+                var preloader = document.getElementById('preloader');
+                if (preloader) {
+                    preloader.style.opacity = '0';
+                    preloader.style.transition = 'opacity 0.5s';
+                    setTimeout(function() {
+                        preloader.style.display = 'none';
+                        preloader.style.visibility = 'hidden';
+                    }, 500);
+                }
+            }, 4000);
+            
+            // Emergency content visibility
+            setTimeout(function() {
+                document.querySelectorAll('.word, .hero-desc, .hero-badge, .feature-card, .portfolio-item').forEach(function(el) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'none';
+                    el.style.visibility = 'visible';
+                });
+            }, 2000);
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Ambient Background Gradient -->
+    <div class="ambient-glow"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-text">
+                <span class="preloader-letter">V</span>
+                <span class="preloader-letter">E</span>
+                <span class="preloader-letter">R</span>
+                <span class="preloader-letter">T</span>
+                <span class="preloader-letter">I</span>
+                <span class="preloader-letter">C</span>
+                <span class="preloader-letter">A</span>
+            </div>
+            <div class="preloader-line"></div>
+        </div>
+        <div class="preloader-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor (Desktop Only) -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Unique Mobile/Desktop Menu Toggle -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+        <span class="menu-text">MENU</span>
+        <span class="menu-icon">
+            <span></span>
+            <span></span>
+        </span>
+    </button>
+
+    <!-- Fullscreen Overlay Navigation -->
+    <nav id="fullscreen-nav" class="fullscreen-nav">
+        <div class="nav-backdrop"></div>
+        <div class="nav-particles"></div>
+        <div class="nav-content">
+            <div class="nav-grid">
+                <div class="nav-col">
+                    <span class="nav-label">Navigation</span>
+                    <ul>
+                        <li><a href="#home" data-link><span class="nav-number">01</span>Home</a></li>
+                        <li><a href="#portfolio" data-link><span class="nav-number">02</span>Portfolio</a></li>
+                        <li><a href="#about" data-link><span class="nav-number">03</span>Philosophy</a></li>
+                        <li><a href="#contact" data-link><span class="nav-number">04</span>Inquire</a></li>
+                    </ul>
+                </div>
+                <div class="nav-col">
+                    <span class="nav-label">Connect</span>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">The Journal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <div class="nav-footer-line"></div>
+                <p>© 2024 Vertica Estates<br>Built from the Ground Up by <a href="https://dw33py.netlify.app" target="_blank" rel="noopener" class="dw33py-nav">Dw33pY</a></p>
+            </div>
+        </div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Sticky Navbar -->
+            <header class="sticky-header">
+                <div class="header-inner">
+                    <div class="header-left">
+                        <span class="header-tag">Est. 1996</span>
+                    </div>
+                    <a href="#" class="logo">VERTICA</a>
+                    <a href="#contact" class="header-cta">
+                        <span>Private Viewing</span>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+            </header>
+
+            <!-- HERO SECTION -->
+            <section id="home" class="hero">
+                <div class="hero-ambient-shape"></div>
+                <div class="hero-line-vertical"></div>
+                <div class="hero-line-horizontal"></div>
+                
+                <div class="hero-container">
+                    <div class="hero-grid">
+                        <div class="hero-content">
+                            <div class="hero-badge">
+                                <span class="badge-dot"></span>
+                                <span class="badge-text">Exclusive Offering</span>
+                            </div>
+                            
+                            <div class="hero-title-wrapper">
+                                <div class="hero-eyebrow">
+                                    <span class="eyebrow-line"></span>
+                                    <span class="eyebrow-text">The Pinnacle Collection</span>
+                                </div>
+                                <h1 class="hero-title">
+                                    <div class="title-line">
+                                        <span class="word">Architecture</span>
+                                    </div>
+                                    <div class="title-line">
+                                        <span class="word">that</span>
+                                        <span class="word italic">commands</span>
+                                    </div>
+                                    <div class="title-line">
+                                        <span class="word">attention</span>
+                                        <span class="word-accent">.</span>
+                                    </div>
+                                </h1>
+                            </div>
+                            
+                            <p class="hero-desc">Curated estates for visionaries who understand that space is the ultimate luxury. Beyond square footage — a statement of intent.</p>
+                            
+                            <div class="hero-stats">
+                                <div class="stat-card">
+                                    <div class="stat-value-wrapper">
+                                        <span class="stat-number" data-target="2.4">2.4</span>
+                                        <span class="stat-suffix">B+</span>
+                                    </div>
+                                    <span class="stat-label">Portfolio Value</span>
+                                    <span class="stat-trend">↑ 23% YoY</span>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-value-wrapper">
+                                        <span class="stat-number" data-target="28">28</span>
+                                    </div>
+                                    <span class="stat-label">Years of Mastery</span>
+                                    <span class="stat-trend">Legacy Firm</span>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-value-wrapper">
+                                        <span class="stat-number" data-target="147">147</span>
+                                    </div>
+                                    <span class="stat-label">Estates Placed</span>
+                                    <span class="stat-trend">Global Reach</span>
+                                </div>
+                            </div>
+
+                            <div class="hero-actions">
+                                <a href="#portfolio" class="btn-primary">
+                                    <span>Explore Collection</span>
+                                    <i class="ri-arrow-right-line"></i>
+                                </a>
+                                <button class="btn-video" data-video-trigger>
+                                    <span class="play-icon"><i class="ri-play-fill"></i></span>
+                                    <span>Watch Film</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-visual">
+                            <div class="visual-frame">
+                                <div class="visual-inner">
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
+                                         alt="Modern brutalist villa exterior with pool" 
+                                         class="hero-img main-img"
+                                         onerror="this.src='https://placehold.co/1200x800/1a1c22/c9a96b?text=Vertica+Estate'">
+                                    <div class="visual-overlay"></div>
+                                </div>
+                                
+                                <div class="floating-card featured-card">
+                                    <div class="card-header">
+                                        <span class="card-badge">Featured</span>
+                                        <span class="card-icon"><i class="ri-star-fill"></i></span>
+                                    </div>
+                                    <h4 class="card-title">Sky Villa — Bel Air</h4>
+                                    <p class="card-address">8840 Wilshire Boulevard</p>
+                                    <div class="card-footer">
+                                        <span class="card-price">$14.5M</span>
+                                        <span class="card-arrow">→</span>
+                                    </div>
+                                </div>
+
+                                <div class="floating-stat">
+                                    <span class="floating-number">6</span>
+                                    <span class="floating-label">Active Listings</span>
+                                </div>
+
+                                <div class="floating-shape shape-1"></div>
+                                <div class="floating-shape shape-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-text">
+                        <span style="--i: 0">S</span>
+                        <span style="--i: 1">c</span>
+                        <span style="--i: 2">r</span>
+                        <span style="--i: 3">o</span>
+                        <span style="--i: 4">l</span>
+                        <span style="--i: 5">l</span>
+                    </div>
+                    <div class="scroll-line-container">
+                        <div class="scroll-line-progress"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURED PORTFOLIO -->
+            <section id="portfolio" class="portfolio">
+                <div class="portfolio-bg-text">COLLECTION</div>
+                <div class="section-header">
+                    <div class="header-content">
+                        <span class="section-tag">01 / Curated</span>
+                        <h2 class="section-title">
+                            <span class="title-reveal">Signature</span><br>
+                            <span class="title-reveal italic">Selections</span>
+                        </h2>
+                    </div>
+                    <div class="header-desc">
+                        <p>A handpicked portfolio of residences that define the modern aesthetic. No fillers, only icons.</p>
+                        <a href="#" class="view-all">View All <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-horizontal">
+                    <div class="portfolio-track">
+                        <div class="portfolio-item" data-index="01">
+                            <div class="item-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=600&auto=format&fit=crop" 
+                                     alt="The Linear House"
+                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Linear+House'">
+                                <div class="item-overlay"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-index">01</span>
+                                    <h3>The Linear House</h3>
+                                    <p>Pacific Palisades / 6 Beds / 8 Baths</p>
+                                </div>
+                                <span class="item-arrow">↗</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-index="02">
+                            <div class="item-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=600&auto=format&fit=crop" 
+                                     alt="Canyon Edge"
+                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Canyon+Edge'">
+                                <div class="item-overlay"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-index">02</span>
+                                    <h3>Canyon Edge</h3>
+                                    <p>Beverly Hills / 5 Beds / 7 Baths</p>
+                                </div>
+                                <span class="item-arrow">↗</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-index="03">
+                            <div class="item-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?q=80&w=600&auto=format&fit=crop" 
+                                     alt="Glass Pavilion"
+                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Glass+Pavilion'">
+                                <div class="item-overlay"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-index">03</span>
+                                    <h3>Glass Pavilion</h3>
+                                    <p>Hollywood Hills / 4 Beds / 5 Baths</p>
+                                </div>
+                                <span class="item-arrow">↗</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-index="04">
+                            <div class="item-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=600&auto=format&fit=crop" 
+                                     alt="Monument Residence"
+                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Monument'">
+                                <div class="item-overlay"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-index">04</span>
+                                    <h3>Monument Residence</h3>
+                                    <p>Malibu / 7 Beds / 9 Baths</p>
+                                </div>
+                                <span class="item-arrow">↗</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHILOSOPHY / ABOUT -->
+            <section id="about" class="about">
+                <div class="about-shape-bg"></div>
+                <div class="about-container">
+                    <div class="about-grid">
+                        <div class="about-media">
+                            <div class="media-mask">
+                                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=800&auto=format&fit=crop" 
+                                     alt="Interior design detail"
+                                     onerror="this.src='https://placehold.co/800x650/1a1c22/c9a96b?text=Vertica+Interior'">
+                                <div class="media-overlay"></div>
+                            </div>
+                            <div class="about-stats-large">
+                                <div class="stat-circle">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(201,169,107,0.2)" stroke-width="2"/>
+                                        <circle cx="50" cy="50" r="45" fill="none" stroke="#c9a96b" stroke-width="2" stroke-dasharray="283" stroke-dashoffset="283" class="stat-circle-progress"/>
+                                    </svg>
+                                    <div class="stat-content">
+                                        <span class="stat-percent">98%</span>
+                                        <span class="stat-desc">Client Retention</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-content">
+                            <span class="overline">Our Ethos</span>
+                            <h3>We don't sell houses. We place masterpieces.</h3>
+                            <p class="about-lead">Vertica bridges the gap between developer inventory and true architectural heritage. Our clients are collectors of space, and we act as their dedicated curators.</p>
+                            
+                            <div class="about-values">
+                                <div class="value-item">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h4>Discretion First</h4>
+                                        <p>Zero market exposure for our most exclusive listings</p>
+                                    </div>
+                                </div>
+                                <div class="value-item">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h4>Global Network</h4>
+                                        <p>Access to pre-market opportunities worldwide</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-inline">
+                                <i class="ri-double-quotes-l quote-icon"></i>
+                                <p>Vertica understood the assignment immediately. They found us a home that wasn't even on the market. Pure intuition and absolute discretion.</p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">JR</div>
+                                    <div>
+                                        <span class="author-name">J. & M. Reynolds</span>
+                                        <span class="author-title">Beverly Hills Residents</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURES / SERVICES - FIXED VISIBILITY -->
+            <section class="features">
+                <div class="features-header">
+                    <span class="section-tag">02 / Services</span>
+                    <h2>Beyond the<br>Transaction</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-number">01</div>
+                        <div class="feature-icon">
+                            <i class="ri-vip-crown-line"></i>
+                        </div>
+                        <h4>Private Client Advisory</h4>
+                        <p>Bespoke acquisition strategies for family offices and private trusts.</p>
+                        <a href="#" class="feature-link">Learn More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number">02</div>
+                        <div class="feature-icon">
+                            <i class="ri-building-line"></i>
+                        </div>
+                        <h4>Architectural Matchmaking</h4>
+                        <p>We align your aesthetic DNA with properties that match your lifestyle.</p>
+                        <a href="#" class="feature-link">Learn More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number">03</div>
+                        <div class="feature-icon">
+                            <i class="ri-eye-line"></i>
+                        </div>
+                        <h4>Off-Market Intelligence</h4>
+                        <p>Access to a global network of pocket listings before they hit the market.</p>
+                        <a href="#" class="feature-link">Learn More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number">04</div>
+                        <div class="feature-icon">
+                            <i class="ri-hand-coin-line"></i>
+                        </div>
+                        <h4>Asset Optimization</h4>
+                        <p>Maximizing portfolio value through strategic renovation oversight.</p>
+                        <a href="#" class="feature-link">Learn More <i class="ri-arrow-right-up-line"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="contact">
+                <div class="contact-bg-text">INQUIRE</div>
+                <div class="contact-container">
+                    <div class="contact-left">
+                        <span class="section-tag">03 / Connect</span>
+                        <h2>Begin the<br>conversation.</h2>
+                        <p class="contact-desc">Your next acquisition shouldn't feel like a transaction. It should feel like a discovery. Reach out for a confidential portfolio review.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <i class="ri-map-pin-line"></i>
+                                <div>
+                                    <span class="label">Studio</span>
+                                    <p>8840 Wilshire Blvd<br>Beverly Hills, CA 90211</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="ri-mail-line"></i>
+                                <div>
+                                    <span class="label">Direct</span>
+                                    <p>private@vertica.estate<br>+1 (310) 555-0194</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-linkedin-line"></i></a>
+                            <a href="#"><i class="ri-twitter-x-line"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form id="inquiry-form" class="inquiry-form">
+                            <div class="form-row">
+                                <div class="form-group floating">
+                                    <input type="text" id="name" required>
+                                    <label for="name">Full Name</label>
+                                    <div class="form-line"></div>
+                                </div>
+                                <div class="form-group floating">
+                                    <input type="email" id="email" required>
+                                    <label for="email">Email Address</label>
+                                    <div class="form-line"></div>
+                                </div>
+                            </div>
+                            <div class="form-group floating">
+                                <select id="interest" required>
+                                    <option value="" disabled selected>Select your interest</option>
+                                    <option value="Acquisition">Acquisition</option>
+                                    <option value="Sale">Sale</option>
+                                    <option value="Investment">Investment</option>
+                                </select>
+                                <label for="interest">Interest</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group floating">
+                                <textarea id="message" rows="1" required></textarea>
+                                <label for="message">Tell us about your ideal space...</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <span class="btn-text">Send Inquiry</span>
+                                <div class="btn-icon">
+                                    <i class="ri-send-plane-fill"></i>
+                                </div>
+                            </button>
+                            <div class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">VERTICA</a>
+                        <p>Architectural Living Advisors</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <span>Explore</span>
+                            <a href="#">Portfolio</a>
+                            <a href="#">Philosophy</a>
+                            <a href="#">Journal</a>
+                        </div>
+                        <div class="footer-column">
+                            <span>Legal</span>
+                            <a href="#">Privacy</a>
+                            <a href="#">Terms</a>
+                            <a href="#">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2024 Vertica Estates. All rights reserved.</p>
+                    <p class="footer-credit">
+                        <span>Built from the Ground Up by </span>
+                        <a href="https://dw33py.netlify.app" target="_blank" rel="noopener" class="dw33py-link">
+                            Dw33pY
+                            <i class="ri-external-link-line"></i>
+                        </a>
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+    </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/13105550194" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+        <span class="wa-tooltip">Concierge</span>
+        <span class="wa-pulse"></span>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="ri-arrow-up-line"></i>
+        <svg class="progress-ring" width="50" height="50">
+            <circle cx="25" cy="25" r="22" fill="none" stroke="rgba(201,169,107,0.3)" stroke-width="2"/>
+            <circle cx="25" cy="25" r="22" fill="none" stroke="#c9a96b" stroke-width="2" stroke-dasharray="138.2" stroke-dashoffset="138.2" class="progress-ring-circle"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
