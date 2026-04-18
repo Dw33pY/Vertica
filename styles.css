@@ -2042,3 +2042,189 @@ img::before {
         height: 350px;
     }
 }
+
+/* ===== WHATSAPP BUTTON FIX ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: max(20px, env(safe-area-inset-bottom, 20px));
+    right: max(20px, env(safe-area-inset-right, 20px));
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+    z-index: 999;
+    text-decoration: none;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+/* ===== PORTFOLIO DRAG HINT ===== */
+.scroll-hint-drag {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.6;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    animation: hintPulse 2s ease-in-out infinite;
+}
+
+.scroll-hint-drag i {
+    font-size: 14px;
+    margin: 0 8px;
+}
+
+@keyframes hintPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+/* ===== PORTFOLIO DRAG CURSOR ===== */
+.portfolio-horizontal {
+    cursor: grab;
+    user-select: none;
+}
+
+.portfolio-horizontal.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+}
+
+/* ===== BACK TO TOP POSITION FIX ===== */
+.back-to-top {
+    position: fixed;
+    bottom: max(20px, env(safe-area-inset-bottom, 20px));
+    left: max(20px, env(safe-area-inset-left, 20px));
+    width: 50px;
+    height: 50px;
+    z-index: 998;
+}
+
+/* ===== MOBILE FLOATING CARD FIX ===== */
+@media (max-width: 768px) {
+    .floating-card {
+        left: 5%;
+        bottom: 5%;
+        width: 220px;
+        padding: 16px;
+    }
+    
+    .floating-stat {
+        top: 5%;
+        right: 5%;
+        padding: 12px 18px;
+    }
+    
+    .floating-number {
+        font-size: 2rem;
+    }
+    
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .scroll-hint-drag {
+        font-size: 10px;
+    }
+}
+
+/* ===== SAFE AREA SUPPORT ===== */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+    .whatsapp-float {
+        bottom: calc(20px + env(safe-area-inset-bottom));
+        right: calc(20px + env(safe-area-inset-right));
+    }
+    
+    .back-to-top {
+        bottom: calc(20px + env(safe-area-inset-bottom));
+        left: calc(20px + env(safe-area-inset-left));
+    }
+}
+
+/* ===== PORTFOLIO DRAG IMPROVEMENTS ===== */
+.portfolio-horizontal {
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+    scroll-behavior: auto;
+    transition: cursor 0.2s ease;
+}
+
+.portfolio-horizontal.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto !important;
+}
+
+.portfolio-horizontal.dragging * {
+    pointer-events: none;
+    user-select: none;
+}
+
+.portfolio-item {
+    pointer-events: auto;
+    transition: transform 0.4s var(--transition-smooth), opacity 0.4s;
+}
+
+.portfolio-horizontal.dragging .portfolio-item {
+    pointer-events: none;
+}
+
+/* Smooth snap animation */
+.portfolio-horizontal {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .portfolio-horizontal {
+        scroll-behavior: auto;
+    }
+}
+
+/* Drag hint animation */
+.scroll-hint-drag {
+    text-align: center;
+    margin-top: 24px;
+    opacity: 0.5;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    animation: hintPulse 2.2s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.scroll-hint-drag i {
+    font-size: 14px;
+    margin: 0 10px;
+    color: var(--accent-gold);
+}
+
+@keyframes hintPulse {
+    0%, 100% { opacity: 0.25; }
+    50% { opacity: 0.7; }
+}
+
+/* Hide hint on mobile if preferred */
+@media (max-width: 768px) {
+    .scroll-hint-drag {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    
+    .scroll-hint-drag i {
+        margin: 0 6px;
+    }
+}
