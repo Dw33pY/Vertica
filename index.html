@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     
-    <title>V E R T I C A | Architectural Living</title>
+    <title>VERTICA | Architectural Living</title>
     <meta name="description" content="Curated luxury estates for the discerning few. Experience architecture that breathes.">
     <meta name="keywords" content="luxury real estate, modern architecture, penthouse, investment property, dw33py">
     <meta property="og:title" content="VERTICA — Living Redefined">
@@ -17,34 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Emergency Preloader Removal -->
-    <script>
-        (function() {
-            setTimeout(function() {
-                var preloader = document.getElementById('preloader');
-                if (preloader) {
-                    preloader.style.opacity = '0';
-                    preloader.style.transition = 'opacity 0.5s';
-                    setTimeout(function() {
-                        preloader.style.display = 'none';
-                        preloader.style.visibility = 'hidden';
-                    }, 500);
-                }
-            }, 3000);
-            
-            setTimeout(function() {
-                document.querySelectorAll('.word, .hero-desc, .hero-badge, .feature-card, .portfolio-item, .stat-number').forEach(function(el) {
-                    el.style.opacity = '1';
-                    el.style.transform = 'none';
-                    el.style.visibility = 'visible';
-                });
-            }, 1500);
-        })();
-    </script>
 </head>
 <body>
-
     <div class="ambient-glow"></div>
     <div class="noise-overlay"></div>
 
@@ -64,6 +38,7 @@
         <div class="preloader-overlay"></div>
     </div>
 
+    <!-- Custom cursor - hidden on mobile via CSS -->
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
@@ -123,8 +98,6 @@
 
             <section id="home" class="hero">
                 <div class="hero-ambient-shape"></div>
-                <div class="hero-line-vertical"></div>
-                <div class="hero-line-horizontal"></div>
                 
                 <div class="hero-container">
                     <div class="hero-grid">
@@ -154,7 +127,7 @@
                                 </h1>
                             </div>
                             
-                            <p class="hero-desc">Curated estates for visionaries who understand that space is the ultimate luxury. Beyond square footage — a statement of intent.</p>
+                            <p class="hero-desc">Curated estates for visionaries who understand that space is the ultimate luxury.</p>
                             
                             <div class="hero-stats">
                                 <div class="stat-card">
@@ -196,10 +169,10 @@
                         <div class="hero-visual">
                             <div class="visual-frame">
                                 <div class="visual-inner">
-                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
-                                         alt="Modern brutalist villa exterior with pool" 
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" 
+                                         alt="Modern brutalist villa" 
                                          class="hero-img main-img"
-                                         onerror="this.src='https://placehold.co/1200x800/1a1c22/c9a96b?text=Vertica+Estate'">
+                                         onerror="this.src='https://placehold.co/800x600/1a1c22/c9a96b?text=Vertica+Estate'">
                                     <div class="visual-overlay"></div>
                                 </div>
                                 
@@ -218,11 +191,8 @@
 
                                 <div class="floating-stat">
                                     <span class="floating-number">6</span>
-                                    <span class="floating-label">Active Listings</span>
+                                    <span class="floating-label">Active</span>
                                 </div>
-
-                                <div class="floating-shape shape-1"></div>
-                                <div class="floating-shape shape-2"></div>
                             </div>
                         </div>
                     </div>
@@ -230,12 +200,7 @@
 
                 <div class="scroll-indicator">
                     <div class="scroll-text">
-                        <span style="--i: 0">S</span>
-                        <span style="--i: 1">c</span>
-                        <span style="--i: 2">r</span>
-                        <span style="--i: 3">o</span>
-                        <span style="--i: 4">l</span>
-                        <span style="--i: 5">l</span>
+                        <span style="--i: 0">S</span><span style="--i: 1">c</span><span style="--i: 2">r</span><span style="--i: 3">o</span><span style="--i: 4">l</span><span style="--i: 5">l</span>
                     </div>
                     <div class="scroll-line-container">
                         <div class="scroll-line-progress"></div>
@@ -254,73 +219,73 @@
                         </h2>
                     </div>
                     <div class="header-desc">
-                        <p>A handpicked portfolio of residences that define the modern aesthetic. No fillers, only icons.</p>
+                        <p>A handpicked portfolio of residences that define the modern aesthetic.</p>
                         <a href="#" class="view-all">View All <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
 
-                <div class="portfolio-horizontal" data-scroll-container>
-                    <div class="portfolio-track" data-scroll-track>
+                <div class="portfolio-horizontal">
+                    <div class="portfolio-track">
                         <div class="portfolio-item" data-index="01">
                             <div class="item-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=600&auto=format&fit=crop" 
+                                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=500&auto=format&fit=crop" 
                                      alt="The Linear House" loading="lazy"
-                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Linear+House'">
+                                     onerror="this.src='https://placehold.co/500x400/1a1c22/c9a96b?text=Linear+House'">
                                 <div class="item-overlay"></div>
                             </div>
                             <div class="item-info">
                                 <div>
                                     <span class="item-index">01</span>
                                     <h3>The Linear House</h3>
-                                    <p>Pacific Palisades / 6 Beds / 8 Baths</p>
+                                    <p>Pacific Palisades / 6 Beds</p>
                                 </div>
                                 <span class="item-arrow">↗</span>
                             </div>
                         </div>
                         <div class="portfolio-item" data-index="02">
                             <div class="item-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=600&auto=format&fit=crop" 
+                                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=500&auto=format&fit=crop" 
                                      alt="Canyon Edge" loading="lazy"
-                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Canyon+Edge'">
+                                     onerror="this.src='https://placehold.co/500x400/1a1c22/c9a96b?text=Canyon+Edge'">
                                 <div class="item-overlay"></div>
                             </div>
                             <div class="item-info">
                                 <div>
                                     <span class="item-index">02</span>
                                     <h3>Canyon Edge</h3>
-                                    <p>Beverly Hills / 5 Beds / 7 Baths</p>
+                                    <p>Beverly Hills / 5 Beds</p>
                                 </div>
                                 <span class="item-arrow">↗</span>
                             </div>
                         </div>
                         <div class="portfolio-item" data-index="03">
                             <div class="item-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?q=80&w=600&auto=format&fit=crop" 
+                                <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?q=80&w=500&auto=format&fit=crop" 
                                      alt="Glass Pavilion" loading="lazy"
-                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Glass+Pavilion'">
+                                     onerror="this.src='https://placehold.co/500x400/1a1c22/c9a96b?text=Glass+Pavilion'">
                                 <div class="item-overlay"></div>
                             </div>
                             <div class="item-info">
                                 <div>
                                     <span class="item-index">03</span>
                                     <h3>Glass Pavilion</h3>
-                                    <p>Hollywood Hills / 4 Beds / 5 Baths</p>
+                                    <p>Hollywood Hills / 4 Beds</p>
                                 </div>
                                 <span class="item-arrow">↗</span>
                             </div>
                         </div>
                         <div class="portfolio-item" data-index="04">
                             <div class="item-img-wrap">
-                                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=600&auto=format&fit=crop" 
+                                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=500&auto=format&fit=crop" 
                                      alt="Monument Residence" loading="lazy"
-                                     onerror="this.src='https://placehold.co/600x800/1a1c22/c9a96b?text=Monument'">
+                                     onerror="this.src='https://placehold.co/500x400/1a1c22/c9a96b?text=Monument'">
                                 <div class="item-overlay"></div>
                             </div>
                             <div class="item-info">
                                 <div>
                                     <span class="item-index">04</span>
                                     <h3>Monument Residence</h3>
-                                    <p>Malibu / 7 Beds / 9 Baths</p>
+                                    <p>Malibu / 7 Beds</p>
                                 </div>
                                 <span class="item-arrow">↗</span>
                             </div>
@@ -333,14 +298,13 @@
             </section>
 
             <section id="about" class="about">
-                <div class="about-shape-bg"></div>
                 <div class="about-container">
                     <div class="about-grid">
                         <div class="about-media">
                             <div class="media-mask">
-                                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=800&auto=format&fit=crop" 
-                                     alt="Interior design detail" loading="lazy"
-                                     onerror="this.src='https://placehold.co/800x650/1a1c22/c9a96b?text=Vertica+Interior'">
+                                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=600&auto=format&fit=crop" 
+                                     alt="Interior design" loading="lazy"
+                                     onerror="this.src='https://placehold.co/600x500/1a1c22/c9a96b?text=Vertica+Interior'">
                                 <div class="media-overlay"></div>
                             </div>
                             <div class="about-stats-large">
@@ -359,7 +323,7 @@
                         <div class="about-content">
                             <span class="overline">Our Ethos</span>
                             <h3>We don't sell houses. We place masterpieces.</h3>
-                            <p class="about-lead">Vertica bridges the gap between developer inventory and true architectural heritage. Our clients are collectors of space, and we act as their dedicated curators.</p>
+                            <p class="about-lead">Vertica bridges the gap between developer inventory and true architectural heritage.</p>
                             
                             <div class="about-values">
                                 <div class="value-item">
@@ -380,7 +344,7 @@
                             
                             <div class="testimonial-inline">
                                 <i class="ri-double-quotes-l quote-icon"></i>
-                                <p>Vertica understood the assignment immediately. They found us a home that wasn't even on the market. Pure intuition and absolute discretion.</p>
+                                <p>Vertica understood the assignment immediately. They found us a home that wasn't even on the market.</p>
                                 <div class="testimonial-author">
                                     <div class="author-avatar">JR</div>
                                     <div>
@@ -437,7 +401,7 @@
                     <div class="contact-left">
                         <span class="section-tag">03 / Connect</span>
                         <h2>Begin the<br>conversation.</h2>
-                        <p class="contact-desc">Your next acquisition shouldn't feel like a transaction. It should feel like a discovery. Reach out for a confidential portfolio review.</p>
+                        <p class="contact-desc">Reach out for a confidential portfolio review.</p>
                         
                         <div class="contact-details">
                             <div class="contact-detail-item">
@@ -466,31 +430,27 @@
                     <div class="contact-right">
                         <form id="inquiry-form" class="inquiry-form">
                             <div class="form-row">
-                                <div class="form-group floating">
-                                    <input type="text" id="name" required>
-                                    <label for="name">Full Name</label>
+                                <div class="form-group">
+                                    <input type="text" id="name" placeholder="Full Name" required>
                                 </div>
-                                <div class="form-group floating">
-                                    <input type="email" id="email" required>
-                                    <label for="email">Email Address</label>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="Email Address" required>
                                 </div>
                             </div>
-                            <div class="form-group floating">
+                            <div class="form-group">
                                 <select id="interest" required>
                                     <option value="" disabled selected>Select your interest</option>
                                     <option value="Acquisition">Acquisition</option>
                                     <option value="Sale">Sale</option>
                                     <option value="Investment">Investment</option>
                                 </select>
-                                <label for="interest">Interest</label>
                             </div>
-                            <div class="form-group floating">
-                                <textarea id="message" rows="1" required></textarea>
-                                <label for="message">Tell us about your ideal space...</label>
+                            <div class="form-group">
+                                <textarea id="message" rows="3" placeholder="Tell us about your ideal space..." required></textarea>
                             </div>
                             <button type="submit" class="btn-submit">
-                                <span class="btn-text">Send Inquiry</span>
-                                <div class="btn-icon"><i class="ri-send-plane-fill"></i></div>
+                                <span>Send Inquiry</span>
+                                <i class="ri-send-plane-fill"></i>
                             </button>
                             <div class="form-feedback"></div>
                         </form>
